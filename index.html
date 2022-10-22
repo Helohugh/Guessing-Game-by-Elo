@@ -7,23 +7,27 @@
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<div id="carrier">
-  <p> Guess a number between 1-2.</p>
-  <p id="ouroutput"> Insert a number below</p>
-  <input type="text" id="userinput"><button id="butnn"> Check your guess</button>
-</div>
-
-
 <body>
-
+  <div id="carrier">
+    <h2>The Zuri Guess Game</h2>
+    <h3 id="player">Player</h3>
+    <div id="userNameDiv">
+        <h3>Insert your username</h3>
+        <input type="text" id="username">
+    </div>
+    <button id="butnn"> StartGame</button>
+    <p id="stage"> LEVEL 1 </p>
+    <p id="random">Guess a number between 1 to 2</p>
+    <p id="ouroutput"> Insert a number below</p>
+    <p id="points">Points: 0</p>
+    <div id="inputDiv">
+        <input type="text" id="userinput">
+        <button id="check">Check</button> 
+    </div>
+    
+  </div>
   <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 </body>
 
-</html>
+    </html>
